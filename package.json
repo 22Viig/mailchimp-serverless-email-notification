@@ -1,0 +1,24 @@
+{
+  "name": "mailchimp-serverless-email-service",
+  "version": "1.0.0",
+  "description": "email service",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:RickyGeek/mailchimp-serverless-email-notification.git"
+  },
+  "keywords": [
+    "serverless",
+    "mailchimp"
+  ],
+  "author": "Riccardo Corti <corti.riccardo@gmail.com>",
+  "license": "ISC",
+  "homepage": "",
+  "dependencies": {
+    "serverless-offline": "^3.13.3",
+    "unirest": "^0.5.1"
+  }
+}
