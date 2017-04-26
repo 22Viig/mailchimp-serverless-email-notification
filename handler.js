@@ -12,7 +12,7 @@ function requestHandler(event, slsCallback) {
 }
 
 
-/* Createa a new mailchiamp campaing */
+/* Create a new mailchimp campaign */
 function createCampaigns(event, slsCallback) {
   var campaignParameters = getCampaignParameters(event.body.subject_line);
   var Request = unirest.post(process.env.mailChimpUrl + '/campaigns')
@@ -56,7 +56,6 @@ function sendCampaign(id, event, slsCallback) {
   var Request = unirest.post(process.env.mailChimpUrl + '/campaigns/' + id + '/actions/send')
     .auth(getAuth())
     .end(function (res) {
-      //console.log(res);
       if (res.statusCode === _statusCodeOk) {
         var slsResponse = {
           statusCode: _statusCodeOk,
