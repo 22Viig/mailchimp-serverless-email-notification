@@ -12,7 +12,7 @@ provider:
 functions:
   mail:
     handler: handler.send
-    description: Invio delle email tramite Mailchiamp API
+    description: Send email via Mailchimp API
     memorySize: 256
     timeout: 10
     events:
@@ -21,11 +21,6 @@ functions:
           path: send
           cors: true
           private: true
-          request:
-            parameters:
-              querystrings:
-                subject_line: true
-                plain_text: true
           response:
           integration: lambda
 
