@@ -37,7 +37,7 @@ sls offline
 curl -H "Content-Type: application/json" -X POST -d '{"plain_text":"Email content plaintext.","subject_line":"Email subject"}' http://localhost:3000/send
 ```
 
-# Load on Amazon Api Gateway via Serverless
+# Deploy on Amazon Api Gateway via Serverless
 ```
 sls deploy --stage dev --region eu-central-1 -v
 ```
